@@ -1,0 +1,21 @@
+Example endpoint for sending a list of mails
+
+---
+parameters:
+  - name: mail_id
+    in: path
+    type: string
+    enum: ['prod-GL', 'non-prod-GL']
+definitions:
+  mail_id:
+    type: object
+    properties:
+      Datacenter_name:
+        type: array
+       
+  proj_id:
+    type: string
+responses:
+  200:
+    description: mail sent
+  
